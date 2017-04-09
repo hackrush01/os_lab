@@ -1,0 +1,11 @@
+# Shell script to find the age group based on entered age
+read -p "Enter Age: " age
+
+if [ $age -gt 80 ]
+then echo "Senior Citizen"
+elif [ $age -gt 25 ]
+then echo "Adult"
+else
+echo "Child"
+fi
+

@@ -1,0 +1,25 @@
+# A script to find the largest number in an Array
+# 23 67 89 56 12 6 1 2 9
+arr=(23 67 89 56 12 6 1 2 9)
+
+echo "Array is: ${arr[@]}"
+read -p "Enter the number to search: " term
+i=0
+
+for num in ${arr[@]}
+do
+  if [ $term -eq $num ]
+  then
+    break
+  else
+    i=$((i+1))
+  fi
+done
+
+if [ $i -lt 9 ]
+then
+  echo "Number found at index: $i"
+else
+  echo "Number not present in the array"
+fi
+

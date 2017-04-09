@@ -1,0 +1,30 @@
+# A bash script to print a pattern
+space=4
+line=1
+lim=1
+
+while [ $space -ge 0 ]
+do
+  # echo $lim
+
+  for (( i=0; i<space; i++ ))
+  do
+    echo -n " "
+  done
+
+  for (( i=$line; i<=$lim; i++ ))
+  do
+    echo -n $i
+  done
+
+  for (( i=$((lim-1)); i>=$line; i-- ))
+  do
+    echo -n $i
+  done
+
+  echo
+
+  line=$((line+1))
+  space=$((space-1))
+  lim=$((lim+2))
+done

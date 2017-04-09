@@ -1,0 +1,24 @@
+# A script to implement bubble sort
+
+read -p "Enter the elements: " num
+read -a arr <<<$num
+echo "Unsorted Array is:  $num"
+len=${#arr[@]}
+
+for (( i=0; i<len; i++ ))
+do
+
+  for (( j=0; j<len-1; j++ ))
+  do
+
+    if [ ${arr[j]} -gt ${arr[j+1]} ]
+    then
+      temp=${arr[j]}
+      arr[j]=${arr[j+1]}
+      arr[j+1]=$temp
+    fi
+
+  done
+done
+
+echo "Sorted Array is:    ${arr[@]}"

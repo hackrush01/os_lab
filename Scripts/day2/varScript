@@ -1,0 +1,3 @@
+# Using variables
+a1="var"
+echo $a1

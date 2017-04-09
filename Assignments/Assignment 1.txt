@@ -1,0 +1,54 @@
+DAY 2 QUESTION 1
+root@hackrush:~# touch sig
+root@hackrush:~# vim sig
+root@hackrush:~# cat sig
+          Name : Amit Tulshyan
+   Affiliation : Information Technology in NIT-Durgapur
+e-mail address : atulshyan96@gmail.com
+root@hackrush:~# chmod o+r sig
+root@hackrush:~# ls -l sig
+-rw-r--r-- 1 root root 126 Jan 23 08:51 sig
+root@hackrush:~# clear
+
+
+DAY 2 QUESTION 2
+
+root@hackrush:~# ls -l
+total 232
+drwxr-xr-x  2 root root   4096 Jan  6 10:23 Desktop
+drwxr-xr-x  2 root root   4096 Nov 20 22:27 Documents
+drwxr-xr-x  2 root root   4096 Jan  6 22:39 Downloads
+-rw-r--r--  1 root root 113521 Dec  1 00:22 driftnet-5.jpeg
+drwxr-xr-x 12 root root   4096 Jan 15 11:01 git-repos
+-rw-r--r--  1 root root   9031 Dec  1 15:42 it lab.xml
+drwxr-xr-x  2 root root   4096 Nov 20 22:27 Music
+drwxr-xr-x  2 root root   4096 Nov 27 13:25 nmap-scans
+drwxr-xr-x  3 root root   4096 Jan 23 08:55 OS_LAB_IT
+drwxr-xr-x  2 root root   4096 Jan  8 23:36 Pictures
+drwxr-xr-x  5 root root   4096 Dec 31 13:05 Project
+drwxr-xr-x  2 root root   4096 Nov 20 22:27 Public
+-rw-r--r--  1 root root    126 Jan 23 08:51 sig
+drwxr-xr-x  3 root root   4096 Nov 25 18:14 sketchbook
+-rw-r--r--  1 root root  52236 Dec  3 11:00 SRF form.pdf
+drwxr-xr-x  2 root root   4096 Nov 20 22:27 Templates
+drwxr-xr-x  2 root root   4096 Dec 18 11:23 Videos
+root@hackrush:~# cat sig >> largest_file.txt
+root@hackrush:~# cat largest_file.txt 
+          Name : Amit Tulshyan
+   Affiliation : Information Technology in NIT-Durgapur
+e-mail address : atulshyan96@gmail.com
+root@hackrush:~# 
+
+
+DAY 2 QUESTION 5(except b)
+
+root@hackrush:~# mkdir Assignment
+root@hackrush:~# cd Assignment
+root@hackrush:~/Assignment# touch calender_info.txt
+root@hackrush:~/Assignment# ls
+calender_info.txt
+root@hackrush:~/Assignment# rm -i calender_info.txt 
+rm: remove regular empty file 'calender_info.txt'? y
+root@hackrush:~/Assignment# ls
+root@hackrush:~/Assignment#
+

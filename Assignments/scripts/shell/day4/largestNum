@@ -1,0 +1,17 @@
+# A script to find the largest number in an Array
+# 23 45 6 8 13 78
+arr=(23 45 6 8 13 78)
+
+echo "Array is: ${arr[@]}"
+
+max=${arr[0]}
+
+for num in ${arr[@]}
+do
+  if [ max > num ]
+  then
+    max=$num
+  fi
+done
+
+echo "Largest number is: $max"

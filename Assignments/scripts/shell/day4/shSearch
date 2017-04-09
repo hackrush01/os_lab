@@ -1,0 +1,5 @@
+printf "Permission   File Path\n"
+find / -iname "*.sh" -printf "%m          %p\n"
+
+printf '\nPresent Working Directory Is\n'
+pwd

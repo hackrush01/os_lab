@@ -1,0 +1,24 @@
+read -p "Enter first number:  " num1
+read -p "Enter second number:  " num2
+hcf=0
+
+if [ num1 > num2 ]
+then
+	x=$num1
+	y=$num2
+else
+	x=$num2
+	y=$num1
+fi
+
+while [ $y -gt 0 ]
+do
+	temp=$y
+	y=$(($x%$y))
+	x=$temp
+done
+
+lcm=$((num1*num2))
+lcm=$((lcm/x))
+
+echo "LCM is $lcm"

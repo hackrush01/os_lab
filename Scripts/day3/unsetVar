@@ -1,0 +1,5 @@
+# Unsetting a variable
+
+Name="abc"
+unset Name
+echo $Name

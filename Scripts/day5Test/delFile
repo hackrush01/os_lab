@@ -1,0 +1,3 @@
+read -p "Enter the filename to delete: " name
+rm $name
+

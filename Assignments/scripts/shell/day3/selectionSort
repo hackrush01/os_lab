@@ -1,0 +1,26 @@
+# A bash program to implement selection sort
+
+read -p "Enter the elements: " num
+read -a arr <<<$num
+echo "Unsorted Array is:  $num"
+len=${#arr[@]}
+
+for (( i=0; i<len-1; i++ ))
+do
+
+  min=$i
+  for (( j=i+1; j<len; j++ ))
+  do
+
+    if [ ${arr[j]} -lt ${arr[min]} ]
+    then
+      min=$j
+    fi
+  done
+
+  temp=${arr[i]}
+  arr[i]=${arr[min]}
+  arr[min]=$temp
+done
+
+echo "Sorted Array is:    ${arr[@]}"

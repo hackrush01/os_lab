@@ -1,0 +1,29 @@
+function HCF() {
+	x=$1
+	y=$2
+	while [ $y -gt 0 ]
+	do
+		# x, y = y, x % y
+		temp=$y
+		y=$((x%y))
+		x=$temp
+	done
+}
+
+read -p "Enter first number:  " num1
+read -p "Enter second number:  " num2
+hcf=0
+
+if [ num1 > num2 ]
+then
+	HCF $num1 $num2
+	hcf=$x
+else
+	HCF $num2 $num1
+	hcf=$x
+fi
+
+lcm=$((num1*num2))
+lcm=$((lcm/hcf))
+
+echo "LCM is: $lcm"

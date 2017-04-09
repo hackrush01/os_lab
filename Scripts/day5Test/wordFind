@@ -1,0 +1,12 @@
+# A bash scrip to check if a file exists
+
+read -p "Enter the file to search in: " name
+read -p "Enter the word to search: " term
+flag=0
+
+if grep -q $term "$name"
+then
+  echo "Word $term exists in file $name."
+  else
+  echo "Word $term doesn't exists in file $name."
+fi

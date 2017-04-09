@@ -1,0 +1,16 @@
+# Shell script to find the greatest of three numbers
+echo "Enter 3 Numbers"
+
+read -p "First Number: " max
+read -p "Second Number: " sNum
+read -p "Third Number: " tNum
+
+if [ $sNum -gt $max ]
+then max=$sNum
+fi
+
+if [ $tNum -gt $max ]
+then max=$tNum
+fi
+
+echo "Greatest number is: $max"

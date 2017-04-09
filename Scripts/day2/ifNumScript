@@ -1,0 +1,9 @@
+# if statement with numbers
+echo "Enter 2 numbers:"
+read fNum
+read sNum
+if [ $fNum -eq $sNum ]
+then echo "Numbers are equal"
+else
+echo "Numbers are unequal"
+fi

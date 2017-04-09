@@ -1,0 +1,20 @@
+# A bash script to check if a number is palindromic
+read -p "Enter a number: " num
+temp=$num
+rev=0
+
+while [ $temp -gt 0 ]
+do
+  rev=$((rev*10))
+  rem=$((temp%10))
+  rev=$(($rev+$rem))
+  temp=$((temp/10)) 
+  echo "$rev"
+done
+
+if [ $rev -eq $num ]
+then
+  echo "The number $num is palindromic"
+else
+  echo "The number $num is not palindromic"
+fi

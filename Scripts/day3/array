@@ -1,0 +1,11 @@
+# Arrays in shell
+
+Arr[0]="A"
+Arr[1]="B"
+Arr[2]="C"
+Arr[3]="D"
+echo "First Index: ${Arr[0]}"
+echo "Second Index: ${Arr[1]}"
+echo "First Method: ${Arr[*]}"
+echo "Second Method: ${Arr[@]}"
+

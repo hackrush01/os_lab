@@ -1,0 +1,7 @@
+# Avg of 3 numbers Shell Script
+echo "Enter 3 numbers:"
+read fNum
+read sNum
+read tNum
+res=$(((fNum+sNum+tNum)/3))
+echo "Avg is $res"

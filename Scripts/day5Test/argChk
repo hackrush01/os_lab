@@ -1,0 +1,10 @@
+# A bash script to check for the number of arguments
+arr=($@)
+len=${#arr[@]}
+
+if [ $len -gt 1 ]
+then
+  echo "Exceeded number of arguments"
+else
+  echo "$1"
+fi

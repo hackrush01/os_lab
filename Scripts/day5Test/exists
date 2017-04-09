@@ -1,0 +1,22 @@
+# A bash scrip to check if a file exists
+
+read -p "Enter the filename to search: " name
+flag=0
+
+arr=$(eval ls)
+
+for file in ${arr[@]}
+do
+  if [ $name == $file ]
+  then
+    flag=1;
+    break
+  fi
+done
+
+if [ $flag -eq 1 ]
+  then
+    echo "File $name exists."
+  else
+    echo "File $name doesn't exists."
+  fi

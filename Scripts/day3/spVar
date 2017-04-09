@@ -1,0 +1,14 @@
+# Special Variables
+
+echo "Filename: $0"
+echo "First Param: $1"
+echo "Secon Param: $2"
+echo $@
+echo $*
+echo "Total Number of Params: $#"
+for TOKEN in $*
+do
+  echo $TOKEN
+done
+echo $?
+

@@ -1,0 +1,6 @@
+# Taking user input
+echo "Enter two integers: "
+read fNum
+read sNum
+res=$(($fNum+$sNum))
+echo "Result is: $res"

@@ -1,0 +1,17 @@
+# A script to find the largest number in an Array
+# 23 45 6 8 13 78
+arr=($@)
+
+echo "Array is: ${arr[@]}"
+
+min=${arr[0]}
+
+for num in ${arr[@]}
+do
+  if [ $min -gt $num ]
+  then
+    min=$num
+  fi
+done
+
+echo "Smallest number is: $min"

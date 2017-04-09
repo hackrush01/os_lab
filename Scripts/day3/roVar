@@ -1,0 +1,6 @@
+# Read Only Variables
+
+Name="hackrush"
+readonly Name
+Name="Amit"
+echo $Name

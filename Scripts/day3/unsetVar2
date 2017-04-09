@@ -1,0 +1,7 @@
+# Unsetting read only variable
+
+Name="abc"
+readonly Name
+unset Name
+echo $Name
+

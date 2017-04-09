@@ -1,0 +1,7 @@
+# Shell Script for learning if...then...else...fi
+echo "Enter the top secret-ish keyword so that I can check my script"
+read secretKeyword
+if [ "$secretKeyword" = "" ]
+then echo "Authenticated"
+else echo "Please leave"
+fi
